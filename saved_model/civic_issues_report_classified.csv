@@ -1,0 +1,20 @@
+filename,issue_type,severity,priority
+acc1 (1).jpg,Accident,Critical,High
+acc1 (13).jpg,Accident,Critical,High
+acc1 (14).jpg,Accident,Critical,High
+acc1 (15).jpg,Accident,Critical,High
+acc1 (2).jpg,Accident,Critical,High
+trash1.jpg,Domestic_trash,Medium,Medium
+trash2.jpg,Domestic_trash,Medium,Medium
+infra1.jpg,Infrastructure_Damage_Concrete,High,High
+infra2.jpg,Infrastructure_Damage_Concrete,High,High
+non_acc1.jpg,Non Accident,Info,Low
+non_acc2.jpg,Non Accident,Info,Low
+parking1.jpg,Parking_Issues_Illegal_Parking,Medium,Medium
+parking2.jpg,Parking_Issues_Illegal_Parking,Medium,Medium
+sign1.jpg,Road_Issues_Damaged_Sign,High,High
+sign2.jpg,Road_Issues_Damaged_Sign,High,High
+pothole1.jpg,Road_Issues_Pothole,High,High
+pothole2.jpg,Road_Issues_Pothole,High,High
+graffiti1.jpg,Vandalism_Graffiti,Medium,Medium
+graffiti2.jpg,Vandalism_Graffiti,Medium,Medium

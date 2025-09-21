@@ -1,0 +1,246 @@
+/* Custom styles for Civic Issues Classifier */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: none;
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-lg {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
+/* Upload area styling */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Loading spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Results styling */
+.prediction-badge {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.confidence-bar {
+    height: 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #dc3545, #ffc107, #28a745);
+}
+
+.severity-badge {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.severity-critical {
+    background-color: #dc3545;
+    color: white;
+}
+
+.severity-high {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.severity-medium {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.severity-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.priority-badge {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.priority-high {
+    background-color: #dc3545;
+    color: white;
+}
+
+.priority-medium {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.priority-low {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Image display */
+#resultImage {
+    border: 3px solid #e9ecef;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#resultImage:hover {
+    transform: scale(1.02);
+}
+
+/* Training progress */
+.progress {
+    height: 25px;
+    border-radius: 15px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Training log */
+#trainingLog {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+    padding: 2px 0;
+}
+
+.log-success {
+    color: #28a745;
+}
+
+.log-error {
+    color: #dc3545;
+}
+
+.log-info {
+    color: #17a2b8;
+}
+
+.log-warning {
+    color: #ffc107;
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 15px;
+    border: none;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    
+    .prediction-badge {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Animation for results */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Custom scrollbar for training log */
+#trainingLog::-webkit-scrollbar {
+    width: 8px;
+}
+
+#trainingLog::-webkit-scrollbar-track {
+    background: #343a40;
+    border-radius: 4px;
+}
+
+#trainingLog::-webkit-scrollbar-thumb {
+    background: #6c757d;
+    border-radius: 4px;
+}
+
+#trainingLog::-webkit-scrollbar-thumb:hover {
+    background: #adb5bd;
+}
